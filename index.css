@@ -1,0 +1,124 @@
+*{
+    margin: 0;padding: 0;
+    font-size: 15px;
+    font-family: system-ui, sans-serif;
+}
+.center-text>.head-1, .head-2{
+    font-size: 2em;
+    color: #767676;
+}
+.head-2{
+    color:rgb(73, 75, 87);
+    font-weight: bolder;
+}
+.center-text>p{
+    color: rgb(201, 200, 204);
+    margin: 20px 0 20px 0;
+}
+.center-text{
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    margin: 50px auto;
+}
+.box-1>h3{
+    color:rgb(73, 75, 87);
+    font-size: 1.2em;
+    padding: 30px 0 10px 20px;
+}
+.box-1>p{
+    color: rgb(201, 200, 204);
+    padding: 10px 0 10px 20px;
+}
+.box-1{
+    width: 400px;height: 250px;
+    border-top: 5px solid rgb(61, 195, 192);
+    box-shadow: 0 3px 10px rgb(161, 182, 181);
+    background-color: #fff;
+    margin: 20px ;
+}
+.flex>.grid :nth-child(2 of .box-1){
+    border-top: 5px solid rgb(230, 92, 93);
+}
+.flex>.grid :nth-child(1 of .box-1){
+    border-top: 5px solid rgb(239, 167, 79);
+}
+.flex :nth-child(2 of .box-1){
+    border-top: 5px solid rgb(80, 148, 225);
+}
+.flex{
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:576px){
+    .center-text>.head-1, .head-2{
+        font-size: 1.3em;
+    }
+    .center-text>p{
+        font-size: 1.1em;
+        padding: 0 20px 0 20px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0 0 0 100px;
+  }
+}
+
+@media (max-width:768px){
+    .center-text>.head-1, .head-2{
+        font-size: 1.5em;
+    }
+   .flex{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+   }
+   .center-text>p{
+    padding: 0 20px 0 20px;
+}
+}
+
+@media (max-width:992px){
+    .box-1>h3{
+        font-size: 1.1em;
+        padding: 15px 0 5px 10px;
+    }
+    .box-1>p{
+        font-size: 0.8em;
+        padding: 5px 0 5px 10px;
+    }
+    .box-1{
+        width: 200px;height: 150px;
+        margin: 10px;
+       }
+       .flex :nth-child(2 of .box-1){
+        box-sizing: border-box;
+        padding: 0 20px 0 20px;
+    }
+    .flex :nth-child(1 of .box-1){
+       box-sizing: border-box;
+       padding: 0 20px 0 20px;
+    }
+}
+
+@media (max-width:1200px){
+   .box-1{
+    width: 300px;height: 200px;
+    margin: 15px;
+   }
+   .flex{
+    padding: 0 20px 0 20px;
+   }
+}
+
+
